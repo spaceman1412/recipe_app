@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home" android:icon="@drawable/ic_baseline_home_24" />
+    <item android:title="Metal Plan"  android:icon="@drawable/ic_baseline_restaurant_24"/>
+    <item android:title="Subcription" android:icon="@drawable/ic_baseline_verified_24" />
+    <item android:title="More" android:icon="@drawable/ic_outline_category_24" />
+</menu>
