@@ -39,7 +39,7 @@ class LargeAdapter() : RecyclerView.Adapter<LargeAdapter.ViewHolder>(){
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.textView_titleName.text = itemsList.get(position).titleName
-        holder.textView_authorName.text = itemsList.get(position).authorName
+        holder.textView_authorName.text = "by "+itemsList.get(position).authorName
         Picasso.get().load(itemsList.get(position).imgUrl).into(holder.imageView_largeItem)
 
     }

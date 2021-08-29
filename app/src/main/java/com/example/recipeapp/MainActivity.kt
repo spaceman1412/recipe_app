@@ -12,16 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val recyclerView_small : RecyclerView = findViewById(R.id.recyclerView_smallList)
-
-        recyclerView_small.layoutManager = LinearLayoutManager(this,RecyclerView.HORIZONTAL,false)
 
 
-        recyclerView_small.adapter = SmallAdapter()
 
-        val recyclerView_large : RecyclerView = findViewById(R.id.recyclerView_largeList)
-        recyclerView_large.layoutManager = LinearLayoutManager(this,RecyclerView.HORIZONTAL,false)
-        recyclerView_large.adapter = LargeAdapter()
+
 
     }
 }
