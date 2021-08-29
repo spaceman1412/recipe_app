@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -24,7 +27,7 @@ class HomeScreen : Fragment() {
 
         recyclerView_small.layoutManager = LinearLayoutManager(context,RecyclerView.HORIZONTAL,false)
 
-        recyclerView_small.adapter = SmallAdapter()
+        recyclerView_small.adapter = SmallAdapter(view)
 
         val recyclerView_large : RecyclerView = view.findViewById(R.id.recyclerView_largeList)
         recyclerView_large.layoutManager = LinearLayoutManager(context,RecyclerView.HORIZONTAL,false)
