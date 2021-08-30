@@ -4,7 +4,7 @@ package com.example.recipeapp
 class DataContainer{
 
     companion object{
-        val itemsList : List<SmallItem> = listOf(
+        val itemsList : MutableList<SmallItem> = mutableListOf(
             SmallItem("https://c.ndtvimg.com/2020-05/rdcvrtb_fried-egg_625x300_29_May_20.jpg","Egg","Thien Nguyen",
                 Detail(176,50,50,"Heavy cream\n" +
                         "Salt\n" +

@@ -12,8 +12,6 @@ import com.squareup.picasso.Picasso
 
 class LargeAdapter(val view_context: View) : RecyclerView.Adapter<LargeAdapter.ViewHolder>(){
 
-
-
     val itemsList : List<SmallItem> = DataContainer.itemsList
 
             class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
@@ -47,7 +45,7 @@ class LargeAdapter(val view_context: View) : RecyclerView.Adapter<LargeAdapter.V
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return itemsList.count()
     }
 
 

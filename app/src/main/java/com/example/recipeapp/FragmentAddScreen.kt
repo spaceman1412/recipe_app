@@ -17,6 +17,7 @@ class FragmentAddScreen : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+//        https://tinhayvip.com/wp-content/uploads/2021/04/food-boy-2-1.jpg
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_add_screen, container, false)
 
@@ -29,8 +30,14 @@ class FragmentAddScreen : Fragment() {
             val titleName = textfield_titleName.text.toString()
             val imgUrl = textfield_imgUrl.text.toString()
             val description = textfield_description.text.toString()
-            println("Title name: "+titleName + " Image Url" + imgUrl + " Description:" + description)
-
+            DataContainer.itemsList.add(
+                SmallItem(imgUrl,titleName,"Thien Nguyen",
+                    Detail(176,50,50,description, Reviews("Thien Nguyen","This is a comment"))
+                ),
+            )
+            println(DataContainer.itemsList)
+            val adapter = LargeAdapter(view)
+            adapter.notifyDataSetChanged()
             Navigation.findNavController(view).navigate(R.id.action_fragmentAddScreen_to_homeScreen)
 
         }
