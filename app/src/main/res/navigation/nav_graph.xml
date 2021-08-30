@@ -16,6 +16,9 @@
         <argument
             android:name="id"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_homeScreen_to_fragmentAddScreen"
+            app:destination="@id/fragmentAddScreen" />
     </fragment>
     <fragment
         android:id="@+id/detailScreen"
@@ -29,5 +32,14 @@
             android:name="number"
             app:argType="integer"
             android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddScreen"
+        android:name="com.example.recipeapp.FragmentAddScreen"
+        android:label="fragment_add_screen"
+        tools:layout="@layout/fragment_add_screen" >
+        <action
+            android:id="@+id/action_fragmentAddScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
     </fragment>
 </navigation>

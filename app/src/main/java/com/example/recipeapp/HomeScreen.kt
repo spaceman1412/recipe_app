@@ -5,11 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class HomeScreen : Fragment() {
@@ -32,6 +34,14 @@ class HomeScreen : Fragment() {
         val recyclerView_large : RecyclerView = view.findViewById(R.id.recyclerView_largeList)
         recyclerView_large.layoutManager = LinearLayoutManager(context,RecyclerView.HORIZONTAL,false)
         recyclerView_large.adapter = LargeAdapter(view)
+
+        //add button
+        val add_btn : FloatingActionButton = view.findViewById(R.id.fab)
+        add_btn.setOnClickListener{
+//            val action = HomeScreenDirections.actionHomeScreenToDetailScreen(position)
+
+            Navigation.findNavController(view).navigate(R.id.action_homeScreen_to_fragmentAddScreen)
+        }
 
         return view
     }

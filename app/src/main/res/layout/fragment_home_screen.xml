@@ -53,6 +53,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView_smallList" />
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -63,6 +64,18 @@
         app:menu="@menu/bottom_menu"
         app:labelVisibilityMode="labeled"
         />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView_largeList"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
