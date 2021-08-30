@@ -21,7 +21,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView_banner"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:adjustViewBounds="true"
@@ -33,7 +33,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView_titleNamedetail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -41,15 +41,15 @@
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView_banner" />
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="by Sarah Smitch"
-                app:layout_constraintStart_toStartOf="@+id/textView4"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                app:layout_constraintStart_toStartOf="@+id/textView_titleNamedetail"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titleNamedetail" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView_calories"
@@ -161,12 +161,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView_calories" />
 
             <TextView
-                android:id="@+id/textView_test1"
+                android:id="@+id/textview_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:text="This is a text\nThis is a text\nThis is a text\nThis is a text\nThis is a text\nThis is a text\nThis is a text\nThis is a text\nThis is a text\nThis is a text\nThis is a text\nThis is a text\nThis is a text\nThis is a text\n"
-                android:textSize="25sp"
+                android:text="This is a text"
                 app:layout_constraintStart_toStartOf="@+id/textView8"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -174,10 +172,11 @@
                 android:id="@+id/textView_test2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Test"
+                android:text="Reviews"
                 android:textSize="25sp"
-                app:layout_constraintStart_toStartOf="@+id/textView_test1"
-                app:layout_constraintTop_toBottomOf="@+id/textView_test1" />
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textview_description"
+                app:layout_constraintTop_toBottomOf="@+id/textview_description" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

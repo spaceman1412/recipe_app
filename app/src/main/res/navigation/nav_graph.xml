@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeScreen_to_detailScreen"
             app:destination="@id/detailScreen" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/detailScreen"
@@ -22,5 +25,9 @@
         <action
             android:id="@+id/action_detailScreen_to_homeScreen"
             app:destination="@id/homeScreen" />
+        <argument
+            android:name="number"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
 </navigation>

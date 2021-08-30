@@ -31,7 +31,7 @@ class HomeScreen : Fragment() {
 
         val recyclerView_large : RecyclerView = view.findViewById(R.id.recyclerView_largeList)
         recyclerView_large.layoutManager = LinearLayoutManager(context,RecyclerView.HORIZONTAL,false)
-        recyclerView_large.adapter = LargeAdapter()
+        recyclerView_large.adapter = LargeAdapter(view)
 
         return view
     }
