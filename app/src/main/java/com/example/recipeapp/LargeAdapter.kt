@@ -16,14 +16,14 @@ class LargeAdapter(val view_context: View) : RecyclerView.Adapter<LargeAdapter.V
 
     val itemsList : List<SmallItem> = DataContainer.itemsList
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
-        val imageView_largeItem : ImageView
-        val textView_titleName : TextView
-        val textView_authorName : TextView
+            class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
+                val imageView_largeItem : ImageView
+                val textView_titleName : TextView
+                val textView_authorName : TextView
 
-        init {
-            imageView_largeItem = view.findViewById(R.id.imageView_largeItem)
-            textView_titleName = view.findViewById(R.id.textView_titleName)
+                init {
+                    imageView_largeItem = view.findViewById(R.id.imageView_largeItem)
+                    textView_titleName = view.findViewById(R.id.textView_titleName)
             textView_authorName = view.findViewById(R.id.textView_authorName)
         }
 
